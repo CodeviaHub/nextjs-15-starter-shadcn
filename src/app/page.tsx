@@ -52,6 +52,7 @@ export default function HomePage() {
                 r.tags.some((t) => t.toLowerCase().includes(search.toLowerCase()));
             const matchCategory = category === 'Tutte' || r.category === category;
             const matchDifficulty = difficulty === 'Tutte' || r.difficulty === difficulty;
+
             return matchSearch && matchCategory && matchDifficulty;
         });
     }, [recipes, search, category, difficulty]);
