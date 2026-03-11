@@ -128,7 +128,7 @@ export default function RecipeForm({ open, onOpenChange, onSave, editing }: Reci
 
     return (
         <Sheet open={open} onOpenChange={onOpenChange}>
-            <SheetContent className='flex w-full flex-col gap-0 p-0 sm:max-w-lg'>
+            <SheetContent className='flex w-full flex-col gap-0 overflow-hidden p-0 sm:max-w-lg'>
                 <SheetHeader className='border-b px-6 py-4'>
                     <SheetTitle>{editing ? 'Modifica ricetta' : 'Nuova ricetta'}</SheetTitle>
                     <SheetDescription>
@@ -136,7 +136,7 @@ export default function RecipeForm({ open, onOpenChange, onSave, editing }: Reci
                     </SheetDescription>
                 </SheetHeader>
 
-                <ScrollArea className='flex-1'>
+                <ScrollArea className='min-h-0 flex-1'>
                     <form id='recipe-form' onSubmit={handleSubmit(onSubmit)} className='space-y-5 px-6 py-4'>
                         <div className='flex gap-3'>
                             <div className='w-20 shrink-0'>
