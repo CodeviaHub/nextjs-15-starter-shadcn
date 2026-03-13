@@ -111,7 +111,7 @@ export default function HomePage() {
                     </h3>
                     <p className='text-muted-foreground mb-6 text-sm'>
                         {recipes.length === 0
-                            ? 'Aggiungi la tua prima ricetta per iniziare!'
+                            ? 'Aggiungi la tua prima ricetta per iniziare!!'
                             : 'Prova a modificare i filtri o la ricerca.'}
                     </p>
                     {recipes.length === 0 && (
